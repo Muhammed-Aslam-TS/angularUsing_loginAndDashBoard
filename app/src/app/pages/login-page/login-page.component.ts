@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent {
+  selectedFlag: string = 'region'; // Initial button label
 
+  changeFlag(flag: string) {
+    this.selectedFlag = flag;
+  }
 }
