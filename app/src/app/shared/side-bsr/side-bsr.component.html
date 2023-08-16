@@ -1,21 +1,24 @@
+
+
+
+
 <div class="d-flex">
-    <!-- Sidebar -->
-    <div class="sidebar p-3">
+    <div class="sidebar"*ngIf="showContent">
+        <!-- Sidebar content here -->
         <h3 class="mb-4 text-black">Budget admin</h3>
         <ul class="list-unstyled">
             <li class="text-black">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid"
                     viewBox="0 0 16 16">
+                    <!-- SVG path data here -->
                     <path
                         d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
                 </svg> Dashboard
             </li>
-
         </ul>
-
-
         <div class="logout-button">
-            <div class="bg-light justify-content-between rounded-5 d-flex">
+            <!-- Logout button content here -->
+            <div class="bg-light mb-4 justify-content-between rounded-5 d-flex">
                 <div>
                     <img src="https://static.vecteezy.com/system/resources/previews/002/002/257/original/beautiful-woman-avatar-character-icon-free-vector.jpg"
                         alt="Profile Picture" class="profile-pic mb-3">
@@ -25,102 +28,26 @@
                     <p class="text-dark"> +91 9876543210</p>
                 </div>
             </div>
-
-            <!-- <div class="mt-auto bg-light w-100">
-            </div> -->
+            <div class="mt-auto bg-light w-100">
+            </div>
             <div class="mt-auto">
-                <button class="btn text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
-                        <path fill-rule="evenodd"
-                            d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-                    </svg> logOut
+                <button class="btn text-dark">
+                    <span class="material-symbols-outlined">
+                        logout
+                    </span> <span>logOut</span>
                 </button>
 
             </div>
         </div>
+        <!-- ... -->
     </div>
 
-    <!-- Content -->
-    <div class="content flex-grow-1">
-
-
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Dashboard</h2>
-                    <p>This is the main content area of your admin dashboard.</p>
-
-                    <div class="bg-light border-1 p-2 rounded-5 col-md-6 align-items-center d-flex justify-content-between">
-                        <svg class=" text-warning" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                          </svg>
-                        <p class="">You Have 32 Support Request Pending for Response
-                            <a href="#">View</a>
-                        </p>
-                    </div>
-
-
-                    <div class="container mt-4">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 1</h5>
-                                        <p class="card-text">This is the content of card 1.</p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 2</h5>
-                                        <p class="card-text">This is the content of card 2.</p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 3</h5>
-                                        <p class="card-text">This is the content of card 3.</p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 4</h5>
-                                        <p class="card-text">This is the content of card 4.</p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <table class="table table-dark table-striped">
-                        <thead>
-                            <td>dfsdf</td>
-                            <td>dfsdf</td>
-                        </thead>
-                        <tbody>
-                            <td>sdfgsdfg</td>
-                            <td>sdfgsdfg</td>
-                        </tbody>
-                      </table>
-
-
-
-                </div>
-            </div>
-        </div>
+    <div class="p-4">
+        <button class="btn btn-secondary rounded-5" (click)="toggleContent()">
+            Toggle Content
+          </button>
     </div>
+
+
+
 </div>

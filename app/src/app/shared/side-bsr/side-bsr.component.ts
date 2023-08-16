@@ -7,5 +7,18 @@ import { Component } from '@angular/core';
 })
 export class SideBsrComponent {
 
- 
+  // showButton = false;
+
+  // show() {
+  //   this.showButton = true;
+  // }
+  // hide() {
+  //   this.showButton = true
+  // }
+
+  showContent = false;
+
+  toggleContent() {
+    this.showContent = !this.showContent;
+  }
 }
